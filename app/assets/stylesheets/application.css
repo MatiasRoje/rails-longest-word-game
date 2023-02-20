@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #343a40;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+/* NEW Page */
+
+.game-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.word-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.word-grid-text {
+  padding: 20px;
+  background-color: #339af0;
+  color: #fff;
+  border: solid 1px #868e96;
+}
+
+.text-under-letter {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.new-form > input {
+  display: inline-block;
+  padding: 10px;
+  border: solid 1px #495057;
+}
+
+.submit-btn {
+  background-color: #fff;
+  border-right: solid 1px #495057;
+}
+
+/* SCORE Page */
+
+.result-text {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #339af0;
+}

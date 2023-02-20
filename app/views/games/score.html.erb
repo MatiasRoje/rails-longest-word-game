@@ -1,0 +1,17 @@
+<div class="container">
+  <h1> RESULT </h1>
+  <% if @parsed_answer == true %>
+    <% grid = params["letters"].split(" ") %>
+    <% user_guess = params["guess"].upcase.split("")  %>
+    <% if (user_guess - grid).empty? == true %>
+      <p class="result-text">Contratulations! <%= params["guess"].upcase %> is a valid English word and is contained on the grid! </p>
+    <% else %>
+      <p class="result-text"> Sorry but <%= params["guess"].upcase %> can't be build out of <%= params["letters"]%> !</p>
+    <% end %>
+  <% else @parsed_answer == false %>
+    <p class="result-text">Sorry but <%= params["guess"].upcase %> does not seem to be a valid English word...</p>
+  <% end %>
+
+  <a class="beautiful-link"> <%= link_to "Play again", new_path %> </a>
+</div>
+</div>
